@@ -70,30 +70,30 @@ class Header extends PureComponent {
             <Jumbotron>
                 <Container>
                     <Row>
-                        <Col md="8">
+                        <Col md="12">
                             <h1>
                                 <img src={monero_logo} className="logo" alt="logo" /> Dashboard
                             </h1>
                             <Container>
                                 <Row>
-                                    <Col md="4">Monero Node Version:</Col>
+                                    <Col md="6">Monero Node Version:</Col>
                                     <Col>{props.info.version}</Col>
                                 </Row>
                                 <Row>
-                                    <Col md="4">Update Available:</Col>
+                                    <Col md="6">Update Available:</Col>
                                     <Col>{update}</Col>
                                 </Row>
                                 <Row>
-                                    <Col md="4">Connected to:</Col>
+                                    <Col md="6">Connected to:</Col>
                                     <Col>{props.info.nettype}</Col>
                                 </Row>
                                 <Row>
-                                    <Col md="4">Busy Syncing:</Col>
+                                    <Col md="6">Busy Syncing:</Col>
                                     <Col>{busy}</Col>
                                 </Row>
                                 <Row>
-                                    <Col md="4">Dashboard Version:</Col>
-                                    <Col md="2">v{version.version}</Col>
+                                    <Col md="6">Dashboard Version:</Col>
+                                    <Col md="6">v{version.version}</Col>
                                     {(() => {
                                         if (version.version !== this.remoteVersion) {
                                             return (
