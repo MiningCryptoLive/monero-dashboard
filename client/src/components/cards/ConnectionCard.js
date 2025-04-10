@@ -7,7 +7,7 @@ function ConnectionCard(props) {
     return (
         <Card className="dataCard">
             <Card.Body>
-                <Card.Title>Connection Stats</Card.Title>
+                <Card.Title>Connection Statistics</Card.Title>
                 <Card.Text>
                     <Container>
                         <Row>
