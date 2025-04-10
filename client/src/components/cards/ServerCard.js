@@ -7,18 +7,18 @@ function ServerCard(props) {
     return (
         <Card className="dataCard">
             <Card.Body>
-                <Card.Title>Server Info</Card.Title>
+                <Card.Title>Server Information</Card.Title>
                 <Card.Text>
                     <Container>
                         <Row>
-                            <Col md="6">Database Size:</Col>
-                            <Col md="6">
+                            <Col md="12">Database Size:</Col>
+                            <Col md="12">
                                 {(props.info.database_size / 1024 / 1024 / 1024).toFixed(2)} GiB
                             </Col>
                         </Row>
                         <Row>
-                            <Col md="6">Free Space:</Col>
-                            <Col md="6">
+                            <Col md="12">Free Space:</Col>
+                            <Col md="12">
                                 {(props.info.free_space / 1024 / 1024 / 1024).toFixed(2)} GiB
                             </Col>
                         </Row>
