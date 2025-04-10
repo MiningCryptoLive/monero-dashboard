@@ -11,24 +11,24 @@ function MoneroCard(props) {
                 <Card.Text>
                     <Container>
                         <Row>
-                            <Col md="6">Network Difficulty</Col>
-                            <Col md="6">
+                            <Col md="8">Network Difficulty</Col>
+                            <Col md="8">
                                 <div class="moneroStats">
                                     {props.info.difficulty?.toLocaleString()} GH/S
                                 </div>
                             </Col>
                         </Row>
                         <Row>
-                            <Col md="6">Network Height</Col>
-                            <Col md="6">
+                            <Col md="8">Network Height</Col>
+                            <Col md="8">
                                 <div class="moneroStats">{props.info.height?.toLocaleString()}</div>
                             </Col>
                         </Row>
                         <Row>
-                            <Col md="6">Target Height</Col>
+                            <Col md="6">Last Network Block</Col>
                             <Col md="6">
                                 <div class="moneroStats">
-                                    {props.info.target_height?.toLocaleString()}
+                                    {props.info.last_network_block?.toLocaleString()}
                                 </div>
                             </Col>
                         </Row>
