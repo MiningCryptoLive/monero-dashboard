@@ -19,14 +19,6 @@ function MoneroCard(props) {
                             </Col>
                         </Row>
                         <Row>
-                            <Col md="8">Network Hashrate</Col>
-                            <Col md="8">
-                                <div class="moneroStats">
-                                    {props.info.hashrate?.toLocaleString()} MH/S
-                                </div>
-                            </Col>
-                        </Row>
-                        <Row>
                             <Col md="8">Network Height</Col>
                             <Col md="8">
                                 <div class="moneroStats">{props.info.height?.toLocaleString()}</div>
