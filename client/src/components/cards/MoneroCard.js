@@ -7,19 +7,19 @@ function MoneroCard(props) {
     return (
         <Card className="dataCard">
             <Card.Body>
-                <Card.Title>Monero Stats</Card.Title>
+                <Card.Title>Monero Blockchain Statistics</Card.Title>
                 <Card.Text>
                     <Container>
                         <Row>
-                            <Col md="6">Difficulty</Col>
+                            <Col md="6">Network Difficulty</Col>
                             <Col md="6">
                                 <div class="moneroStats">
-                                    {props.info.difficulty?.toLocaleString()}
+                                    {props.info.difficulty?.toLocaleString()} GH/S
                                 </div>
                             </Col>
                         </Row>
                         <Row>
-                            <Col md="6">Height</Col>
+                            <Col md="6">Network Height</Col>
                             <Col md="6">
                                 <div class="moneroStats">{props.info.height?.toLocaleString()}</div>
                             </Col>
