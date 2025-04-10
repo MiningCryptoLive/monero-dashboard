@@ -25,19 +25,12 @@ function MoneroCard(props) {
                             </Col>
                         </Row>
                         <Row>
-                            <Col md="6">Last Network Block</Col>
-                            <Col md="6">
-                                <div class="moneroStats">
-                                    {props.info.last_network_block?.toLocaleString()}
-                                </div>
-                            </Col>
-                        </Row>
-                        <Row>
                             <Col md="6">Sync Percentage</Col>
                             <Col md="6">
                                 <div class="moneroStats">{props.info.sync_percentage}%</div>
                             </Col>
                         </Row>
+                    <Row></Row>
                     </Container>
                 </Card.Text>
             </Card.Body>
